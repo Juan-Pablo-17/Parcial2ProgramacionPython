@@ -138,8 +138,9 @@ fig_1 = plt.figure("Gráfica del Sen(x)")
 ax1=fig_1.add_subplot()
 
 
-
+#==============================================================
 #Funciones de la librería np
+#==============================================================
 
 def h(z):
     return np.sin(z)
@@ -151,10 +152,13 @@ def j(z):
     return np.exp(z)
 
 #Intervalos
+#==============================================================
 
 z=np.linspace(0, 10, 100)
 
+#==============================================================
 #Gráfica del Sen(x)
+#==============================================================
 
 ax1.plot(z, h(z), "r", label="$Sen(x)$")     #Función Sin(x) de np
 ax1.plot(x, sen_x, marker="o", color="b", label="$P$") #Punto de la aproximación
@@ -179,7 +183,9 @@ plt.text(0.3,-0.7, "$P=$Argumento Ingresado")
 plt.text(x + 0.2,sen_x + 0.2, "$Punto=P$", color="b")
 plt.legend(loc=1)
 
+#==============================================================
 #Gráfica del Cos(x)
+#==============================================================
 
 #Creando las figura
 
@@ -208,7 +214,9 @@ plt.text(0.3,-0.7, "$P=$Argumento Ingresado")
 plt.text(x + 0.2,cos_x + 0.2, "$Punto=P$", color="b")
 plt.legend(loc=1)
 
+#==============================================================
 #Para la función exp(x)
+#==============================================================
 
 #Creando las figura
 
